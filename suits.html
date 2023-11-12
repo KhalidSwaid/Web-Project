@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="app.css" />
+    <title>Astro-Suits</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="contact">
+          <div class="contact-icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=1690493167&mibextid=LQQJ4d"
+              target="_blank"
+              ><i class="fa fa-facebook fa-4x icon-3d"></i
+            ></a>
+            <a
+              href="https://instagram.com/astro_men_fashion?igshid=OGQ5ZDc2ODk2ZA== "
+              target="_blank"
+              ><i class="fa fa-instagram fa-4x icon-3d"></i
+            ></a>
+            <a href="https://wa.me/0542598690" target="_blank"
+              ><i class="fa fa-whatsapp fa-4x icon-3d"></i
+            ></a>
+          </div>
+          <div class="mobile-icons-group">
+            <i class="fa fa-angle-down fa-4x icon-3d" id="down-arrow"></i>
+          </div>
+        </div>
+        <div class="shop-name">
+          <h1>ASTRO</h1>
+        </div>
+        <div class="search">
+          <div class="search-container">
+            <input id="input" type="search" required />
+            <i id="search-icon" class="fa fa-search fa-4x icon-3d"></i>
+          </div>
+          <!-- <form action="">
+            <input type="searched" required />
+            <i id="search-icon" class="fa fa-search fa-4x icon-3d"></i>
+          </form> -->
+        </div>
+      </header>
+      <nav class="navigation-bar">
+        <ul class="list">
+          <li class="blank">
+            <img src="./WeAreAstroImg.jpg" alt="logo image" class="logo-img" />
+          </li>
+          <li class="nav-item">
+            <a
+              class="home-link nav-link"
+              href="http://127.0.0.1:5500/index.html"
+            >
+              <i class="fa fa-home fa-4x icon-3d"></i>
+            </a>
+          </li>
+          <button class="suits-btn nav-btn">
+            <li class="nav-item">
+              <a class="suits-link nav-link" href="./suits.html">Suits</a>
+            </li>
+          </button>
+          <button class="men-btn nav-btn">
+            <li class="nav-item">
+              <a class="men-link nav-link" href="#">Men</a>
+            </li>
+          </button>
+          <button class="kids-btn nav-btn">
+            <li class="nav-item">
+              <a class="kids-link nav-link" href="#">Kids</a>
+            </li>
+          </button>
+          <li class="about">
+            <a class="about-link nav-link" href="./about.html">
+              <i class="fa fa-info-circle fa-4x icon-3d"></i>
+            </a>
+          </li>
+
+          <li class="toggle-bar"><span class="bars"></span></li>
+        </ul>
+      </nav>
+      <div class="suits-header">
+        <button class="filter-btn">
+          <i class="fa fa-filter fa-4x icon-3d"></i>סנן לפי
+        </button>
+        <h1>חילפות</h1>
+      </div>
+      <div class="suits-pannel">
+        <div class="suits-posters">
+          <div class="suits-flyers">
+            <figure class="suit">
+              <img src="./Suits/img1.jpg" alt="" />
+              <div class="suit-box">
+                <h3>אפור</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1199&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img2.jpg" alt="" />
+              <div class="suit-box">
+                <h3>שחור</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1699&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img3.jpg" alt="" />
+              <div class="suit-box">
+                <h3>וניל</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1499&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img4.jpg" alt="" />
+              <div class="suit-box">
+                <h3>כחול אפור</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1399&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img5.jpg" alt="" />
+              <div class="suit-box">
+                <h3>כחול אפור</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1399&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img6.jpg" alt="" />
+              <div class="suit-box">
+                <h3>כחול</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1599&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img7.jpg" alt="" />
+              <div class="suit-box">
+                <h3>כחול כהה</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1999&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img8.jpg" alt="" />
+              <div class="suit-box">
+                <h3>שחור קלסי</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>2199&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="suit">
+              <img src="./Suits/img9.jpg" alt="" />
+              <div class="suit-box">
+                <h3>אפור בהיר</h3>
+                <ul class="suit-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><b>1750&#x20AA;</b></span>
+                  </li>
+                  <li>
+                    <button class="buy-now-btn">קנה עכשיו</button>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div class="suits-control">
+          <div class="color">
+            <h4>צבע</h4>
+            <ul>
+              <li class="color-item" id="gray"></li>
+              <li class="color-item" id="light-blue"></li>
+              <li class="color-item" id="black"></li>
+              <li class="color-item" id="heavy-blue"></li>
+              <li class="color-item" id="vanilla"></li>
+            </ul>
+          </div>
+          <div class="price">
+            <h4>מחיר</h4>
+            <div class="slide-container">
+              <input
+                type="range"
+                min="1000"
+                max="3500"
+                value="1000"
+                class="slider"
+                id="slider"
+              />
+              <div class="prices">
+                <span id="price" class="slider-container-span"></span>
+                <p><span>3500&#x20AA;</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="size">
+            <h4>מידה</h4>
+            <ul class="size-list" role="group">
+              <li>
+                <b><a href="#">26</a></b>
+              </li>
+              <li>
+                <b><a href="#">27</a></b>
+              </li>
+              <li>
+                <b><a href="#">28</a></b>
+              </li>
+              <li>
+                <b><a href="#">29</a></b>
+              </li>
+              <li>
+                <b><a href="#">30</a></b>
+              </li>
+              <li>
+                <b><a href="#">31</a></b>
+              </li>
+              <li>
+                <b><a href="#">32</a></b>
+              </li>
+              <li>
+                <b><a href="#">33</a></b>
+              </li>
+              <li>
+                <b><a href="#">34</a></b>
+              </li>
+              <li>
+                <b><a href="#">36</a></b>
+              </li>
+              <li>
+                <b><a href="#">38</a></b>
+              </li>
+              <li>
+                <b><a href="#">40</a></b>
+              </li>
+              <li>
+                <b><a href="#">S</a></b>
+              </li>
+              <li>
+                <b><a href="#">M</a></b>
+              </li>
+              <li>
+                <b><a href="#">L</a></b>
+              </li>
+              <li>
+                <b><a href="#">XS</a></b>
+              </li>
+              <li>
+                <b><a href="#">XL</a></b>
+              </li>
+              <li>
+                <b><a href="#">XXL</a></b>
+              </li>
+              <li>
+                <b><a href="#">XXXL</a></b>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
