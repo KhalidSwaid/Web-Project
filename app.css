@@ -462,14 +462,7 @@ nav {
   font-size: 30px;
 }
 
-.suits-header {
-  display: flex;
-  justify-content: right;
-  text-align: right;
-  margin: 30px 50px;
-}
-
-.men-header {
+.headers {
   display: flex;
   justify-content: right;
   text-align: right;
@@ -503,28 +496,14 @@ nav {
   box-shadow: 0 10px 20px #000;
 }
 
-.suits-pannel {
+.pannels {
   display: flex;
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
 }
 
-.men-pannel {
-  display: flex;
-  flex-wrap: nowrap;
-  position: relative;
-  justify-content: space-between;
-}
-
-.men-posters {
-  display: flex;
-  flex-wrap: wrap;
-  /* background: blue; */
-  width: 100%;
-}
-
-.suits-posters {
+.clothes-posters {
   display: flex;
   flex-wrap: wrap;
   /* background: blue; */
