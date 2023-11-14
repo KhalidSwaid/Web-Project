@@ -18,6 +18,14 @@ slider.oninput = function () {
   output.innerHTML = this.value + "&#x20AA;";
 };
 
+const slider2 = document.querySelector("#slider-two");
+const output2 = document.querySelector("#price-two");
+output2.innerHTML = slider.value + "&#x20AA;";
+
+slider2.oninput = function () {
+  output2.innerHTML = this.value + "&#x20AA;";
+};
+
 const filterButton = document.querySelector("#filter-btn");
 const filterPopup = document.querySelector("#filter-popup");
 
