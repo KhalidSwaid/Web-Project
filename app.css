@@ -561,6 +561,16 @@ nav {
   background-color: #43a6c6;
 }
 
+#white {
+  background-color: #fff;
+  margin-top: 7px;
+}
+
+#claret {
+  background-color: #811331;
+  margin-top: 7px;
+}
+
 .color ul li:hover {
   transform: scale(1.1);
 }
