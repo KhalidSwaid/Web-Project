@@ -851,3 +851,22 @@ nav {
   margin-right: 90px;
   z-index: 1;
 }
+
+/* #clothing-images figure {
+  display: none;
+} */
+
+/* #clothing-images figure.active {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+  margin-left: 80px;
+} */
+
+.suit {
+  display: block;
+}
+
+.suit[style*="display: none"] {
+  display: none;
+}

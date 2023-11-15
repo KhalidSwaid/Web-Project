@@ -9,6 +9,7 @@
 //   }
 // });
 
+//Slider: price representation
 const slider = document.querySelector("#slider");
 const output = document.querySelector("#price");
 
@@ -26,6 +27,7 @@ slider2.oninput = function () {
   output2.innerHTML = this.value + "&#x20AA;";
 };
 
+//Pop-up window to filter clothes (According to color, price and size)
 const filterButton = document.querySelector("#filter-btn");
 const filterPopup = document.querySelector("#filter-popup");
 
@@ -43,6 +45,7 @@ filterPopup.addEventListener("mouseout", function (event) {
   }
 });
 
+//Pop-up window disappears when hovering outside the window limits
 function isMouseInside(event, element) {
   const rect = element.getBoundingClientRect();
   return (
@@ -52,3 +55,28 @@ function isMouseInside(event, element) {
     event.clientY <= rect.bottom
   );
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const colorItems = document.querySelectorAll(".color-item");
+  const clothingImages = document.querySelector("#clothing-images");
+
+  Array.from(colorItems).forEach((colorItem) => {
+    colorItem.addEventListener("click", function () {
+      const selectedColor = this.getAttribute("data-color");
+      filterClothingByColor(selectedColor);
+    });
+  });
+
+  function filterClothingByColor(color) {
+    const allSuits = document.querySelectorAll(".suit");
+    Array.from(allSuits).forEach((suit) => {
+      const suitColor = suit.getAttribute("data-color");
+
+      if (color === "all" || suitColor === color) {
+        suit.style.display = "block";
+      } else {
+        suit.style.display = "none";
+      }
+    });
+  }
+});
