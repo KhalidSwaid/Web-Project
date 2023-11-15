@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const colorItems = document.querySelectorAll(".color-item");
   const clothingImages = document.querySelector("#clothing-images");
 
+  // console.log("Clothing images: ", clothingImages);
+
   Array.from(colorItems).forEach((colorItem) => {
     colorItem.addEventListener("click", function () {
       const selectedColor = this.getAttribute("data-color");
@@ -69,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function filterClothingByColor(color) {
     const allSuits = document.querySelectorAll(".suit");
+    // console.log("all suits:", allSuits);
     Array.from(allSuits).forEach((suit) => {
       const suitColor = suit.getAttribute("data-color");
 
