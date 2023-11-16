@@ -61,16 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const clothingImages = document.querySelector("#clothing-images");
 
   //This section is for letting slider price responsive
-  const initialPrice = document.querySelector("#slider-two").value;
-  console.log(initialPrice);
+  const initialPrice = document.querySelector("#slider-two").value; //get the initial value of the slider
 
-  document.querySelector("#price-two").textContent = initialPrice;
+  document.querySelector("#price-two").textContent = initialPrice; //set the initial value in the price span
 
+  //Function to filter clothes based on selected price
   function filterClothes() {
-    const selectedPrice = document.querySelector("#slider-two").value;
-    const clothingItems = document.querySelectorAll(".suit");
+    const selectedPrice = document.querySelector("#slider-two").value; //get the selected price from the slider
+    const clothingItems = document.querySelectorAll(".suit"); //select all clothing items
+    //loop through each clothing item
     Array.from(clothingItems).forEach(function (item) {
-      const itemPrice = parseInt(item.querySelector("span b").textContent);
+      const itemPrice = parseInt(item.querySelector("span b").textContent); //get the price of the current item
       if (itemPrice >= selectedPrice) {
         item.style.display = "block";
       } else {
@@ -79,25 +80,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //Event listener for the slider input change
   document.querySelector("#slider-two").addEventListener("input", function () {
-    const selectedPrice = this.value;
-    document.querySelector("#price-two").textContent = selectedPrice;
-    filterClothes();
+    const selectedPrice = this.value; //get the selected price from the slider
+    document.querySelector("#price-two").textContent = selectedPrice; //update the displated price
+    filterClothes(); //call the funtion to update displayed items
   });
 
-  filterClothes();
+  filterClothes(); //initial flitering based on the initial slider value
 
+  //event listener for color items
   Array.from(colorItems).forEach((colorItem) => {
     colorItem.addEventListener("click", function () {
-      const selectedColor = this.getAttribute("data-color");
-      filterClothingByColor(selectedColor);
+      const selectedColor = this.getAttribute("data-color"); //get the selected color from the color selector
+      filterClothingByColor(selectedColor); //filtering clothes according to the selected color
     });
   });
 
+  //Function to filter clothing items based on color
   function filterClothingByColor(color) {
-    const allSuits = document.querySelectorAll(".suit");
+    const allSuits = document.querySelectorAll(".suit"); //select all clothing items
     Array.from(allSuits).forEach((suit) => {
-      const suitColor = suit.getAttribute("data-color");
+      const suitColor = suit.getAttribute("data-color"); //get the color of the current item
 
       if (color === "all" || suitColor === color) {
         suit.style.display = "block";
